@@ -13,8 +13,18 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/events">
-            <p>ღონისძიებები</p>
+          <Link to="/history">
+            <p>ისტორია</p>
+          </Link>
+        </li>
+        <li>
+          <Link to="/gallery">
+            <p>გალერეა</p>
+          </Link>
+        </li>
+        <li>
+          <Link to="/about_us">
+            <p>ჩვენს შესახებ</p>
           </Link>
         </li>
         <li>
