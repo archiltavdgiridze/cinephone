@@ -5,7 +5,9 @@ import "./Navbar.scss";
 const Navbar = () => {
   return (
     <nav>
-      <div className="logo">CinePhone</div>
+      <div className="logo">
+        <Link to="/">CinePhone</Link>
+      </div>
       <ul>
         <li>
           <Link to="/">
