@@ -36,16 +36,18 @@ const Navbar = () => {
             <p>Contact</p>
           </Link>
         </li>
-        <li>
-          <Link to="https://www.fb.com">
-            <FontAwesomeIcon icon={faFacebookF} />
-          </Link>
-        </li>
-        <li>
-          <Link to="/contact">
-            <FontAwesomeIcon icon={faInstagram} />
-          </Link>
-        </li>
+        <div className="navbar-social-logo">
+          <li>
+            <Link to="https://www.fb.com">
+              <FontAwesomeIcon icon={faFacebookF} />
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact">
+              <FontAwesomeIcon icon={faInstagram} />
+            </Link>
+          </li>
+        </div>
       </ul>
     </nav>
   );

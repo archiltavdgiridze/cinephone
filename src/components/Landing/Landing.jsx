@@ -1,6 +1,7 @@
 import React from "react";
 import "./Landing.scss";
 import { Link } from "react-router-dom";
+import film_roll from "../../assets/LandingPage/film-flim-roll.png"
 
 const Landing = () => {
   return (
@@ -14,7 +15,9 @@ const Landing = () => {
           <button>Submit films for 2024!</button>
         </Link>
       </div>
-      <div className="hero-right"></div>
+      <div className="hero-right">
+        <img src={film_roll} alt="" />
+      </div>
     </div>
   );
 };
