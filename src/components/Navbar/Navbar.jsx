@@ -1,37 +1,49 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Navbar = () => {
   return (
     <nav>
       <div className="logo">
-        <Link to="/">CinePhone</Link>
+        <Link to="/">CinePhone LOGO here</Link>
       </div>
       <ul>
         <li>
           <Link to="/">
-            <p>მთავარი</p>
+            <p>Main</p>
           </Link>
         </li>
         <li>
           <Link to="/history">
-            <p>ისტორია</p>
+            <p>History</p>
           </Link>
         </li>
         <li>
           <Link to="/gallery">
-            <p>გალერეა</p>
+            <p>Gallery</p>
           </Link>
         </li>
         <li>
           <Link to="/about_us">
-            <p>ჩვენს შესახებ</p>
+            <p>About us</p>
           </Link>
         </li>
         <li>
           <Link to="/contact">
-            <p>კონტაქტი</p>
+            <p>Contact</p>
+          </Link>
+        </li>
+        <li>
+          <Link to="https://www.fb.com">
+            <FontAwesomeIcon icon={faFacebookF} />
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact">
+            <FontAwesomeIcon icon={faInstagram} />
           </Link>
         </li>
       </ul>

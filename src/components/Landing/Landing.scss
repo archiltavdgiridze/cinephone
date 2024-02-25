@@ -9,7 +9,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("../../assets/LandingPage/landing-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -32,5 +31,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 50%;
   }
 }

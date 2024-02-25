@@ -5,12 +5,16 @@ import { Link } from "react-router-dom";
 const Landing = () => {
   return (
     <div className="landing_wrapper">
-      <div>
-        <h1>აჭარული ამბები არის ფესტივალი სმარტ–ფილმების შესახებ</h1>
-        <Link to={"/history"}>
-          <button>მეტის ნახვა</button>
+      <div className="hero-left">
+        <h1>International Smart-Film Festival "Adjarian Film Tales"</h1>
+        <p>Got a film idea? Wanna use a Smartphne for it?</p>
+        <p>Then grab your phone and follow these 3 steps!</p>
+        <p>Unblock - Press "Record" - Create Smart - Film! and send it to us?</p>
+        <Link to={"/"}>
+          <button>Submit films for 2024!</button>
         </Link>
       </div>
+      <div className="hero-right"></div>
     </div>
   );
 };
