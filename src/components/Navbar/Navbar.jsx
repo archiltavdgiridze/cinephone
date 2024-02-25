@@ -43,7 +43,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/contact">
+            <Link to="https://www.instagram.com">
               <FontAwesomeIcon icon={faInstagram} />
             </Link>
           </li>

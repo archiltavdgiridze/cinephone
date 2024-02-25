@@ -15,20 +15,6 @@
   );
   color: #fff;
 
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: blur(6px); // Adjust the blur radius as needed
-    z-index: -1;
-  }
-
   /* Other styles for your content */
   h1,
   button {

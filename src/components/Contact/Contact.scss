@@ -1,0 +1,26 @@
+.contact {
+  padding: 2rem 6rem;
+}
+
+.contact-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  gap: 2rem;
+
+  .contact-left,
+  .contact-right {
+    width: 50%;
+    text-align: center;
+  }
+
+  .contact-right img {
+    width: 80%;
+    height: 60%;
+  }
+}
