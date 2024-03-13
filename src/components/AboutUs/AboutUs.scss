@@ -1,0 +1,30 @@
+.about_us{
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .hero{
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        padding: 30px;
+        .hero_half{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
+                width: 70%;
+            }
+            img{
+                width: 80%;
+            }
+        }
+        .vertical{
+            flex-direction: column;
+            gap: 50px;
+            align-items: center;
+        }
+    }
+
+}
