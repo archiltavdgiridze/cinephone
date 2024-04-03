@@ -22,6 +22,11 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
+          <Link to="/submission">
+            <p>Submission</p>
+          </Link>
+        </li>
+        <li>
           <Link to="/gallery">
             <p>Gallery</p>
           </Link>

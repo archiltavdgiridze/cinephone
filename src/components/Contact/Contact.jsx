@@ -6,31 +6,20 @@ const Contact = () => {
     <div className="contact">
       <h1>Contact</h1>
       <div className="contact-wrapper">
-        <img src="https://picsum.photos/500" alt="" />
-        <div >
-          <div>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
-              deleniti enim, quod nemo sint quia quo non eum deserunt voluptate
-              doloribus eveniet ipsum?
-            </p>
-            <h3>Lorem, ipsum.</h3>
+        {/* <img src="https://picsum.photos/500" alt="" /> */}
+        <div>
+          <div className="location">
+            <h3>Visit us</h3>
+            <p>Gogebashvili Str #6, Shuakhevi Municipality,</p>
+            <p>Adjara, Georgia</p>
           </div>
           <div>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
-              deleniti enim, quod nemo sint quia quo non eum deserunt voluptate
-              doloribus eveniet ipsum?
-            </p>
-            <h3>Lorem, ipsum.</h3>
+            <h3>E-mail us</h3>
+            <p>cinephoneadjaraff@gmail.com</p>
           </div>
           <div>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
-              deleniti enim, quod nemo sint quia quo non eum deserunt voluptate
-              doloribus eveniet ipsum?
-            </p>
-            <h3>Lorem, ipsum.</h3>
+            <h3>Give us a call</h3>
+            <p>(+995) 597 780501</p>
           </div>
         </div>
       </div>

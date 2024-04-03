@@ -7,6 +7,7 @@ import Contact from "./components/Contact/Contact";
 import AboutUs from "./components/AboutUs/AboutUs";
 import History from "./components/History/History";
 import Gallery from "./components/Gallery/Gallery";
+import Submission from "./components/Submission/Submission";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/history" element={<History />} />
+        <Route path="/submission" element={<Submission />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/about_us" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />

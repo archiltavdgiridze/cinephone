@@ -1,0 +1,43 @@
+.submissions_wrapper {
+  h1 {
+    text-align: center;
+  }
+
+  .submission_content {
+    display: flex;
+    flex-direction: row;
+    align-content: start;
+    padding: 0 100px;
+    gap: 30px;
+
+    .submission_imgs {
+      display: flex;
+      flex-direction: column;
+      width: 40vw;
+
+      div {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+
+        img {
+          width: 100%;
+          max-width: 400px;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .submission_text {
+      width: 60vw;
+
+      ul {
+        li {
+          p {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
