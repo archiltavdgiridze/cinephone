@@ -14,6 +14,10 @@
     rgba(0, 200, 230, 1) 100%
   );
   color: #fff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   /* Other styles for your content */
   h1,
@@ -60,5 +64,27 @@
   .hero-right img {
     width: 80%;
     height: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .landing_wrapper {
+    flex-direction: column;
+
+    .hero-left {
+      position: relative;
+      z-index: 10;
+    }
+
+    .hero-right {
+      position: absolute;
+      filter: opacity(0.5);
+      z-index: 0;
+
+      img {
+        width: 200%;
+        height: 200%;
+      }
+    }
   }
 }
