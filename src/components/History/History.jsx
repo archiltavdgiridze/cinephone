@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import year2022 from "../../assets/HistoryPage/HistoryYearPhotos/history-2022.jpg";
-import year2023 from "../../assets/HistoryPage/HistoryYearPhotos/history-2023.jpg";
-import "./History.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronDown,
   faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
+import year2022 from "../../assets/HistoryPage/HistoryYearPhotos/history-2022.jpg";
+import year2023 from "../../assets/HistoryPage/HistoryYearPhotos/history-2023.jpg";
+import "./History.scss";
 
 const History = () => {
-  const [isYear2022Collapsed, setIsYear2022Collapsed] = useState(false);
-  const [isYear2023Collapsed, setIsYear2023Collapsed] = useState(false);
+  const [isYear2022Collapsed, setIsYear2022Collapsed] = useState(true);
+  const [isYear2023Collapsed, setIsYear2023Collapsed] = useState(true);
 
   const toggleYear2022Collapse = () => {
     setIsYear2022Collapsed(!isYear2022Collapsed);
@@ -27,11 +27,16 @@ const History = () => {
         <p>
           We founded our festival in 2022 and it was held only locally. The name
           was simply "Adjarian News", which targeted the audience of mostly the
-          children from our region. It proved its success, we got support from
-          other regions and this year we decided to take a bold step and make it
-          international. Even though we are almost newbies and the festival has
-          existed for three years, we are ready to take the challenges and offer
-          our original vision of Georgian Smart-Film Festival to the world.
+          children from our region.
+        </p>
+        <p>
+          It proved its success, we got support from other regions and this year
+          we decided to take a bold step and make it international.
+        </p>
+        <p>
+          Even though we are almost newbies and the festival has existed for
+          three years, we are ready to take the challenges and offer our
+          original vision of Georgian Smart-Film Festival to the world.
         </p>
       </div>
       <div className="history_by_years">
@@ -48,7 +53,9 @@ const History = () => {
               </button>
             </div>
             <div
-              className={`collapse ${isYear2022Collapsed ? "collapsed" : ""}`}
+              className={`collapse-content ${
+                isYear2022Collapsed ? "collapsed" : ""
+              }`}
             >
               <p>
                 THE FIRST FESTIVAL WAS HELD LOCALLY . IT WAS CALLED "ADJARIAN
@@ -69,7 +76,7 @@ const History = () => {
             <div className="num_n_btn">
               <h2 className="history_year">2023</h2>
               <button onClick={toggleYear2023Collapse}>
-                {isYear2022Collapsed ? (
+                {isYear2023Collapsed ? (
                   <FontAwesomeIcon icon={faChevronLeft} />
                 ) : (
                   <FontAwesomeIcon icon={faChevronDown} />
@@ -77,7 +84,9 @@ const History = () => {
               </button>
             </div>
             <div
-              className={`collapse ${isYear2023Collapsed ? "collapsed" : ""}`}
+              className={`collapse-content ${
+                isYear2023Collapsed ? "collapsed" : ""
+              }`}
             >
               <p>
                 THE SECOND FESTIVAL STEPPED UP TO AN INTERNATIONAL LEVEL . OUT

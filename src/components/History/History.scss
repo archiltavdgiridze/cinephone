@@ -2,22 +2,24 @@
   // background-color: var(--lightblue);
 
   .festival_history {
-    height: 80dvw;
-    max-height: 800px;
-    min-height: 700px;
+    // height: 80dvw;
+    // max-height: 800px;
+    // min-height: 700px;
+    margin: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     h1 {
       text-align: center;
-      padding: 20px 0 0;
+      padding: 20px 0;
     }
 
     p {
-      text-align: center;
-      padding: 0 4%;
+      text-align: justify;
+      padding: 0 6%;
       font-size: 1.7rem;
+      text-indent: 2em;
     }
   }
 }
@@ -73,12 +75,8 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1000px) {
+@media screen and (min-width: 769px) and (max-width: 1000px) {
   .history_wrapper {
-    .festival_history {
-      // height: 60dvw;
-    }
-
     .history_by_years {
       flex-direction: row;
       flex-wrap: wrap;
@@ -93,11 +91,17 @@
   }
 }
 
+// for collapsing button dissapearing after 768px width
+@media screen and (min-width: 769px) {
+  .num_n_btn button {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .history_wrapper {
     .festival_history {
-      min-height: auto;
-      margin: 30px 0 70px;
+      margin: 30px 0;
 
       h1 {
         font-size: 2rem;
@@ -128,9 +132,6 @@
     align-items: center;
     margin: 20px 0;
 
-    h2 {
-    }
-
     button {
       width: 4rem;
       height: 4rem;
@@ -144,10 +145,10 @@
     }
   }
 
-  .collapse {
-    max-height: 1000px; // Set this to a value greater than the expected content height
+  .collapse-content {
+    max-height: 1000px; /* Set this to a value greater than the expected content height */
     overflow: hidden;
-    transition: max-height 1s ease; // Smooth transition
+    transition: max-height 1s ease-in; /* Smooth transition */
   }
 
   .collapsed {

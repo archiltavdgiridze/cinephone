@@ -45,3 +45,20 @@ nav {
 .svg-inline--fa {
   font-size: 1.5rem;
 }
+
+.navbar-toggler {
+  min-height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  ul li a {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    .svg-inline--fa {
+      // width: 30px;
+      font-size: 2rem;
+    }
+  }
+}

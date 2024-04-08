@@ -12,13 +12,13 @@ import {
   faPeopleGroup,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import Offcanvas from "react-bootstrap/Offcanvas";
 
 const NavbarElem = () => {
   return (
@@ -83,7 +83,7 @@ const NavbarElem = () => {
     //     </div>
     //   </ul>
     // </nav>
-    <Navbar expand={'lg'} className="bg-body-tertiary">
+    <Navbar expand={"lg"} className="bg-body-tertiary">
       <Container fluid>
         <div className="logo">
           <Link to="/">CinePhone LOGO here</Link>
@@ -100,8 +100,8 @@ const NavbarElem = () => {
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Nav className="justify-content-end flex-grow-1 pe-3">
-              <ul style={{listStyle:'none'}}>
+            <Nav className="justify-content-center flex-grow-1 pe-3">
+              <ul style={{ listStyle: "none" }}>
                 <li>
                   <Link to="/">
                     <FontAwesomeIcon icon={faHouse} />
@@ -158,7 +158,6 @@ const NavbarElem = () => {
                 </div>
               </ul>
             </Nav>
-
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>
