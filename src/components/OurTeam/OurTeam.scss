@@ -1,0 +1,92 @@
+.our_team_wrapper {
+  .our_team_bg {
+    width: 80vw;
+    height: 500px;
+    background-color: #a4bcdd;
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .our_team_main_header {
+    width: 50vw;
+    text-align: center;
+    margin: 0 auto 70px;
+    padding-top: 40px;
+    position: relative;
+    z-index: 1;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.staff_section,
+.jury_section {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.staff_wrapper,
+.jury_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 50px 0;
+
+  .staff_info,
+  .jury_info {
+    padding: 20px;
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.staff,
+.jury {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.staff_img,
+.jury_img {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    object-fit: cover;
+  }
+}

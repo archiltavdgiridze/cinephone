@@ -28,7 +28,7 @@ const Submission = () => {
               </p>
             </li>
             <li>
-              <p>Duration of the films - maximum 10 minutes, any genre</p>
+              <p>Duration of the films - maximum 10 minutes, any genre.</p>
             </li>
             <li>
               <p>
@@ -40,9 +40,11 @@ const Submission = () => {
               <p>
                 Applicants must send and register films at filmfreeway.com (our
                 link is:
-                https://filmfreeway.com/nternationalYouthSmart-FilmFestivalCine-PhoneAdjara)
-                fill and sign the following form:
               </p>
+              <a href="https://filmfreeway.com/nternationalYouthSmart-FilmFestivalCine-PhoneAdjara">
+                filmfreeway.com
+              </a>
+              <p>fill and sign the following form:</p>
               <a href="">NEWEST GOOGLE FORM SHOULD BE ADDED HERE</a>
             </li>
             <li>

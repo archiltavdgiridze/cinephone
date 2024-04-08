@@ -1,6 +1,7 @@
 :root {
   --lightblue: #00c7e5;
   --darkblue: #020024;
+  --navbar-height: 13vh;
 }
 
 body {
