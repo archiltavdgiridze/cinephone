@@ -1,5 +1,5 @@
 import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
+// import Navbar from "./components/Navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Landing from "./components/Landing/Landing";
 import Contact from "./components/Contact/Contact";
@@ -8,11 +8,14 @@ import History from "./components/History/History";
 import Gallery from "./components/Gallery/Gallery";
 import Submission from "./components/Submission/Submission";
 import OurTeam from "./components/OurTeam/OurTeam";
+import NavbarElem from "./components/Navbar/Navbar";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <NavbarElem />
       <div className="pages">
         <Routes>
           <Route path="/" element={<Landing />} />

@@ -12,71 +12,158 @@ import {
   faPeopleGroup,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
-const Navbar = () => {
+const NavbarElem = () => {
   return (
-    <nav>
-      <div className="logo">
-        <Link to="/">CinePhone LOGO here</Link>
-      </div>
-      <ul>
-        <li>
-          <Link to="/">
-            <FontAwesomeIcon icon={faHouse} />
-            <p>Main</p>
-          </Link>
-        </li>
-        <li>
-          <Link to="/history">
-            <FontAwesomeIcon icon={faTimeline} />
-            <p>History</p>
-          </Link>
-        </li>
-        <li>
-          <Link to="/submission">
-            <FontAwesomeIcon icon={faPaperPlane} />
-            <p>Submission</p>
-          </Link>
-        </li>
-        <li>
-          <Link to="/gallery">
-            <FontAwesomeIcon icon={faImages} />
-            <p>Gallery</p>
-          </Link>
-        </li>
-        <li>
-          <Link to="/about_us">
-            <FontAwesomeIcon icon={faCircleInfo} />
-            <p>About us</p>
-          </Link>
-        </li>
-        <li>
-          <Link to="/our_team">
-            <FontAwesomeIcon icon={faPeopleGroup} />
-            <p>Our Team</p>
-          </Link>
-        </li>
-        <li>
-          <Link to="/contact">
-            <FontAwesomeIcon icon={faPhone} />
-            <p>Contact</p>
-          </Link>
-        </li>
-        <div className="navbar-social-logo">
-          <li>
-            <Link to="https://www.fb.com">
-              <FontAwesomeIcon icon={faFacebookF} />
-            </Link>
-          </li>
-          <li>
-            <Link to="https://www.instagram.com">
-              <FontAwesomeIcon icon={faInstagram} />
-            </Link>
-          </li>
+    // <nav>
+    //   <div className="logo">
+    //     <Link to="/">CinePhone LOGO here</Link>
+    //   </div>
+    //   <ul>
+    //     <li>
+    //       <Link to="/">
+    //         <FontAwesomeIcon icon={faHouse} />
+    //         <p>Main</p>
+    //       </Link>
+    //     </li>
+    //     <li>
+    //       <Link to="/history">
+    //         <FontAwesomeIcon icon={faTimeline} />
+    //         <p>History</p>
+    //       </Link>
+    //     </li>
+    //     <li>
+    //       <Link to="/submission">
+    //         <FontAwesomeIcon icon={faPaperPlane} />
+    //         <p>Submission</p>
+    //       </Link>
+    //     </li>
+    //     <li>
+    //       <Link to="/gallery">
+    //         <FontAwesomeIcon icon={faImages} />
+    //         <p>Gallery</p>
+    //       </Link>
+    //     </li>
+    //     <li>
+    //       <Link to="/about_us">
+    //         <FontAwesomeIcon icon={faCircleInfo} />
+    //         <p>About us</p>
+    //       </Link>
+    //     </li>
+    //     <li>
+    //       <Link to="/our_team">
+    //         <FontAwesomeIcon icon={faPeopleGroup} />
+    //         <p>Our Team</p>
+    //       </Link>
+    //     </li>
+    //     <li>
+    //       <Link to="/contact">
+    //         <FontAwesomeIcon icon={faPhone} />
+    //         <p>Contact</p>
+    //       </Link>
+    //     </li>
+    //     <div className="navbar-social-logo">
+    //       <li>
+    //         <Link to="https://www.fb.com">
+    //           <FontAwesomeIcon icon={faFacebookF} />
+    //         </Link>
+    //       </li>
+    //       <li>
+    //         <Link to="https://www.instagram.com">
+    //           <FontAwesomeIcon icon={faInstagram} />
+    //         </Link>
+    //       </li>
+    //     </div>
+    //   </ul>
+    // </nav>
+    <Navbar expand={'lg'} className="bg-body-tertiary">
+      <Container fluid>
+        <div className="logo">
+          <Link to="/">CinePhone LOGO here</Link>
         </div>
-      </ul>
-    </nav>
+        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
+        <Navbar.Offcanvas
+          id={`offcanvasNavbar-expand-lg`}
+          aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
+          placement="end"
+        >
+          <Offcanvas.Header closeButton>
+            <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
+              Menu
+            </Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body>
+            <Nav className="justify-content-end flex-grow-1 pe-3">
+              <ul style={{listStyle:'none'}}>
+                <li>
+                  <Link to="/">
+                    <FontAwesomeIcon icon={faHouse} />
+                    <p>Main</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/history">
+                    <FontAwesomeIcon icon={faTimeline} />
+                    <p>History</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/submission">
+                    <FontAwesomeIcon icon={faPaperPlane} />
+                    <p>Submission</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/gallery">
+                    <FontAwesomeIcon icon={faImages} />
+                    <p>Gallery</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/about_us">
+                    <FontAwesomeIcon icon={faCircleInfo} />
+                    <p>About us</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/our_team">
+                    <FontAwesomeIcon icon={faPeopleGroup} />
+                    <p>Our Team</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact">
+                    <FontAwesomeIcon icon={faPhone} />
+                    <p>Contact</p>
+                  </Link>
+                </li>
+                <div className="navbar-social-logo">
+                  <li>
+                    <Link to="https://www.fb.com">
+                      <FontAwesomeIcon icon={faFacebookF} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="https://www.instagram.com">
+                      <FontAwesomeIcon icon={faInstagram} />
+                    </Link>
+                  </li>
+                </div>
+              </ul>
+            </Nav>
+
+          </Offcanvas.Body>
+        </Navbar.Offcanvas>
+      </Container>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default NavbarElem;
