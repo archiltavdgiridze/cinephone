@@ -28,3 +28,17 @@
     }
 
 }
+
+@media screen and (max-width:768px) {
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px !important;
+        .hero_half{
+            width: 85% !important;
+            p{
+                width: 95% !important;
+            }
+        }
+    }
+}
