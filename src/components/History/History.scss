@@ -2,20 +2,24 @@
   // background-color: var(--lightblue);
 
   .festival_history {
-    height: 80vh;
+    // height: 80dvw;
+    // max-height: 800px;
+    // min-height: 700px;
+    margin: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     h1 {
       text-align: center;
-      padding: 20px 0 0;
+      padding: 20px 0;
     }
 
     p {
-      text-align: center;
-      padding: 0 4%;
+      text-align: justify;
+      padding: 0 6%;
       font-size: 1.7rem;
+      text-indent: 2em;
     }
   }
 }
@@ -35,9 +39,12 @@
     // height: 800px;
     border-radius: 20px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .year_texts {
-      height: 350px;
+      height: fit-content;
     }
 
     h2 {
@@ -65,5 +72,86 @@
     p {
       font-size: 2rem;
     }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  .history_wrapper {
+    .history_by_years {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      .year2022,
+      .year2023,
+      .year2024 {
+        width: 45%;
+      }
+    }
+  }
+}
+
+// for collapsing button dissapearing after 768px width
+@media screen and (min-width: 769px) {
+  .num_n_btn button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .history_wrapper {
+    .festival_history {
+      margin: 30px 0;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .history_by_years {
+      flex-direction: column;
+      gap: 20px;
+
+      .year2022,
+      .year2023,
+      .year2024 {
+        width: 90%;
+      }
+    }
+  }
+
+  .num_n_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+    margin: 20px 0;
+
+    button {
+      width: 4rem;
+      height: 4rem;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: var(--darkblue);
+      color: #fff;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  }
+
+  .collapse-content {
+    max-height: 1000px; /* Set this to a value greater than the expected content height */
+    overflow: hidden;
+    transition: max-height 1s ease-in; /* Smooth transition */
+  }
+
+  .collapsed {
+    max-height: 0;
   }
 }
