@@ -1,6 +1,6 @@
 nav {
   width: 100%;
-  height: 10vh;
+  height: 10dvh;
   background-color: #f1f1f1;
   display: flex;
   flex-direction: row;
@@ -23,9 +23,29 @@ nav {
     li {
       text-align: center;
 
+      a::before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: blue;
+        transition: width 0.3s ease;
+      }
+
+      a:hover::before {
+        width: 100%;
+      }
+
+      a:active {
+        color: blue;
+      }
+
       a {
         display: flex;
         flex-direction: column;
+        position: relative;
 
         p {
           margin: 0;
@@ -60,18 +80,16 @@ nav {
           gap: 30px;
           flex-direction: row;
         }
-      }
-    }
 
-    .navbar-social-logo {
-      margin-top: 30px;
+        a:active {
+          color: blue;
+        }
+
+
+      }
     }
   }
 }
-
-
-
-
 
 .navbar-social-logo {
   display: flex;
@@ -82,19 +100,8 @@ nav {
 
 .svg-inline--fa {
   font-size: 1.5rem;
-}.navbar-toggler {
-  min-height: 40px;
 }
 
-@media screen and (max-width: 768px) {
-  ul li a {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-
-    .svg-inline--fa {
-      // width: 30px;
-      font-size: 2rem;
-    }
-  }
+.navbar-toggler {
+  min-height: 40px;
 }

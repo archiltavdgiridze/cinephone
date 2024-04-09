@@ -25,67 +25,6 @@ const NavbarElem = () => {
   };
 
   return (
-    // <nav>
-    //   <div className="logo">
-    //     <Link to="/">CinePhone LOGO here</Link>
-    //   </div>
-    //   <ul>
-    //     <li>
-    //       <Link to="/">
-    //         <FontAwesomeIcon icon={faHouse} />
-    //         <p>Main</p>
-    //       </Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/history">
-    //         <FontAwesomeIcon icon={faTimeline} />
-    //         <p>History</p>
-    //       </Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/submission">
-    //         <FontAwesomeIcon icon={faPaperPlane} />
-    //         <p>Submission</p>
-    //       </Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/gallery">
-    //         <FontAwesomeIcon icon={faImages} />
-    //         <p>Gallery</p>
-    //       </Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/about_us">
-    //         <FontAwesomeIcon icon={faCircleInfo} />
-    //         <p>About us</p>
-    //       </Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/our_team">
-    //         <FontAwesomeIcon icon={faPeopleGroup} />
-    //         <p>Our Team</p>
-    //       </Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/contact">
-    //         <FontAwesomeIcon icon={faPhone} />
-    //         <p>Contact</p>
-    //       </Link>
-    //     </li>
-    //     <div className="navbar-social-logo">
-    //       <li>
-    //         <Link to="https://www.fb.com">
-    //           <FontAwesomeIcon icon={faFacebookF} />
-    //         </Link>
-    //       </li>
-    //       <li>
-    //         <Link to="https://www.instagram.com">
-    //           <FontAwesomeIcon icon={faInstagram} />
-    //         </Link>
-    //       </li>
-    //     </div>
-    //   </ul>
-    // </nav>
     <Navbar expand={'lg'} className="bg-body-tertiary">
       <Container fluid>
         <div className="logo">
@@ -105,8 +44,8 @@ const NavbarElem = () => {
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Nav className="justify-content-end flex-grow-1 pe-3">
-              <ul style={{listStyle:'none'}}>
+            <Nav className="navv flex-grow-1 pe-3">
+              <ul>
                 <li>
                   <Link to="/">
                     <FontAwesomeIcon icon={faHouse} />
