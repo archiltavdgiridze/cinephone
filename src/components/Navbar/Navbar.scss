@@ -15,7 +15,6 @@ nav {
     display: flex;
     justify-content: space-evenly;
     width: 70%;
-
     align-items: center;
     list-style: none;
     padding: 0;
@@ -36,10 +35,49 @@ nav {
   }
 }
 
+@media screen and (min-width:991px) {
+  .navv {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .navv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      list-style: none;
+
+      li {
+        a {
+          display: flex;
+          gap: 30px;
+          flex-direction: row;
+        }
+      }
+    }
+
+    .navbar-social-logo {
+      margin-top: 30px;
+    }
+  }
+}
+
+
+
+
+
 .navbar-social-logo {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  align-items: center;
 }
 
 .svg-inline--fa {
