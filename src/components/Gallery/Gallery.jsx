@@ -2,33 +2,29 @@ import React, { useState } from "react";
 import "./Gallery.scss";
 
 const Gallery = () => {
-  const [showGallery, setShowGallery] = useState(false);
-
-  const toggleGallery = () => {
-    setShowGallery(!showGallery);
+  const importAll = (r) => {
+    let images = {};
+    r.keys().map((item, index) => {
+      images[item.replace("./", "")] = r(item);
+    });
+    return images;
   };
+
+  const images = importAll(
+    require.context("../../assets/GalleryPage", false, /\.(png|jpe?g|svg)$/)
+  );
+
+  console.log(images);
 
   return (
     <div className="gal_body">
-      <div className={showGallery ? "gallery expanded" : "gallery"} onClick={toggleGallery}>
-        {!showGallery ? (
-          [...Array(9)].map((_, index) => (
-            <div key={index}></div>
-          ))
-        ) :
-          <div className="circle">
-            X
-          </div>
-        }
+      <h1>Adjarian Film Tales' gallery</h1>
+
+      <div className="gallery_images">
+        {Object.keys(images).map((imageName, index) => (
+          <img key={index} src={images[imageName]} alt={imageName} />
+        ))}
       </div>
-      {showGallery && (
-        <div className="gallery_images">
-          {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((e) => (
-            <img key={e} alt={e} src="https://picsum.photos/100" />
-          ))}
-          {/* Add more images */}
-        </div>
-      )}
     </div>
   );
 };
