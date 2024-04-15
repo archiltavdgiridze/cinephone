@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import LazyLoad from "react-lazyload"; // Import LazyLoad component
 import "./Gallery.scss";
 
 const Gallery = () => {
@@ -14,15 +15,16 @@ const Gallery = () => {
     require.context("../../assets/GalleryPage", false, /\.(png|jpe?g|svg)$/)
   );
 
-  console.log(images);
-
   return (
     <div className="gal_body">
       <h1>Adjarian Film Tales' gallery</h1>
 
       <div className="gallery_images">
         {Object.keys(images).map((imageName, index) => (
-          <img key={index} src={images[imageName]} alt={imageName} />
+          <LazyLoad key={index} height={200} offset={100}>
+            {/* LazyLoad wrapper */}
+            <img src={images[imageName]} alt={imageName} />
+          </LazyLoad>
         ))}
       </div>
     </div>
