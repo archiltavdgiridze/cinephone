@@ -16,6 +16,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import AFT_logo from "../../assets/other/AFT_logo.png";
 
 const NavbarElem = () => {
   const [showOffcanvas, setShowOffcanvas] = useState(false);
@@ -28,7 +29,9 @@ const NavbarElem = () => {
     <Navbar expand={'lg'} className="bg-body-tertiary">
       <Container fluid>
         <div className="logo">
-          <Link to="/">CinePhone LOGO here</Link>
+          <Link to="/">
+            <img src={AFT_logo} alt="" />
+          </Link>
         </div>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} onClick={() => setShowOffcanvas(!showOffcanvas)} />
         <Navbar.Offcanvas

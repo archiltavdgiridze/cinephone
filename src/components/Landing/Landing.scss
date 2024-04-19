@@ -67,6 +67,11 @@
   }
 }
 
+.hero-left h1 {
+  width: 80%;
+  margin: 0 auto 60px;
+}
+
 @media screen and (max-width: 768px) {
   .landing_wrapper {
     flex-direction: column;

@@ -1,4 +1,5 @@
 .submissions_wrapper {
+  padding: 50px 0;
   h1 {
     text-align: center;
   }
@@ -42,17 +43,17 @@
   }
 }
 
-@media screen and (max-width:768px) {
-    .submission_content{
-      padding: 0 40px !important;
-      flex-direction: column-reverse !important;
-      align-items: center;
-      .submission_text{
-        width: 85dvw !important;
-      }
-      ul{
-        list-style: none;
-        padding-left: 0;
-      }
+@media screen and (max-width: 768px) {
+  .submission_content {
+    padding: 0 40px !important;
+    flex-direction: column-reverse !important;
+    align-items: center;
+    .submission_text {
+      width: 85dvw !important;
     }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+  }
 }

@@ -1,3 +1,14 @@
+.logo {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 nav {
   width: 100%;
   height: 10dvh;
@@ -14,6 +25,7 @@ nav {
   ul {
     display: flex;
     justify-content: space-evenly;
+    gap: 30px;
     width: 70%;
     align-items: center;
     list-style: none;
@@ -24,13 +36,18 @@ nav {
       text-align: center;
 
       a::before {
-        content: '';
+        content: "";
         position: absolute;
         bottom: -2px;
         left: 0;
         width: 0;
         height: 2px;
-        background-color: blue;
+        background: linear-gradient(
+          90deg,
+          #254d8e,
+          #003f1d,
+          #ed8100
+        ); /* Gradient color */
         transition: width 0.3s ease;
       }
 
@@ -39,7 +56,7 @@ nav {
       }
 
       a:active {
-        color: blue;
+        color: linear-gradient(90deg, #254d8e, #003f1d, #ed8100);
       }
 
       a {
@@ -55,13 +72,13 @@ nav {
   }
 }
 
-@media screen and (min-width:991px) {
+@media screen and (min-width: 991px) {
   .navv {
     justify-content: flex-end;
   }
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width: 991px) {
   .navv {
     display: flex;
     flex-direction: column;
@@ -84,8 +101,6 @@ nav {
         a:active {
           color: blue;
         }
-
-
       }
     }
   }
