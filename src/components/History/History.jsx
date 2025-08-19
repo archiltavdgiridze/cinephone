@@ -25,18 +25,39 @@ const History = () => {
       <div className="festival_history">
         <h1>History of the festival</h1>
         <p>
-          We founded our festival in 2022 and it was held only locally. The name
-          was simply "Adjarian News", which targeted the audience of mostly the
-          children from our region.
+          Inspired by the revolutionary possibilities of ever-advancing
+          smartphones, we founded the celebration of smartphone-made films back
+          in 2022, hoping to unite the youth who express their cinematographic
+          ideas with the simplest gadgets.
         </p>
         <p>
-          It proved its success, we got support from other regions and this year
-          we decided to take a bold step and make it international.
+          We founded our festival in 2022. It was held only locally, focusing on
+          local talents. The name was simply "Adjarian News", which targeted the
+          audience of mostly the children from our region. It immediately proved
+          its success, we got support from other regions and the following year
+          we decided to take a bold step and reach our voice to a broader
+          audience by making the festival international and attracting foreign
+          audiences and talents.
+        </p>
+        <p>
+          2023 edition attracted youth from more than 15 other countries,
+          including Ukraine, Iran, France, India etc. The number of submissions
+          also grew by 300%. We got more support from local and national
+          sponsors, more attention from national media and audiences.
+        </p>
+        <p>
+          In 2025, we are aiming to go broader and include even more talents and
+          international audiences, by including international jury members and
+          more workshop/masterclasses.
         </p>
         <p>
           Even though we are almost newbies and the festival has existed for
           three years, we are ready to take the challenges and offer our
-          original vision of Georgian Smart-Film Festival to the world.
+          original vision of Georgian Smart-Film Festival to the world!
+        </p>
+        <p>
+          So grab your phone, click ,,Record", create your smart-magic and share
+          it with us!
         </p>
       </div>
       <div className="history_by_years">
@@ -104,7 +125,7 @@ const History = () => {
           <img src={year2023} alt="photo from the festival from 2023" />
         </div>
         <div className="year2024">
-          <h2 className="history_year">2024</h2>
+          <h2 className="history_year">2025</h2>
           <p>Coming soon...</p>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import './AboutUs.scss'
-import hero1 from '../../assets/aboutUs/hero1.jpg'
+import hero1 from '../../assets/other/AFT_logo.png'
 import hero2 from '../../assets/aboutUs/hero2.jpg'
 import hero3 from '../../assets/aboutUs/hero3.jpg'
 import hero4 from '../../assets/aboutUs/hero4.jpg'

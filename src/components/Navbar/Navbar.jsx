@@ -12,10 +12,10 @@ import {
   faPeopleGroup,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Offcanvas from "react-bootstrap/Offcanvas";
 import AFT_logo from "../../assets/other/AFT_logo.png";
 
 const NavbarElem = () => {
@@ -26,14 +26,17 @@ const NavbarElem = () => {
   };
 
   return (
-    <Navbar expand={'lg'} className="bg-body-tertiary">
-      <Container fluid>
-        <div className="logo">
-          <Link to="/">
-            <img src={AFT_logo} alt="" />
-          </Link>
-        </div>
-        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} onClick={() => setShowOffcanvas(!showOffcanvas)} />
+    <Navbar expand={"lg"} className="bg-body-tertiary custom-navbar">
+      <Container fluid className="navbar-container">
+        <Navbar.Brand as={Link} to="/" className="logo">
+          <img src={AFT_logo} alt="AFT Logo" />
+        </Navbar.Brand>
+
+        <Navbar.Toggle
+          aria-controls={`offcanvasNavbar-expand-lg`}
+          onClick={() => setShowOffcanvas(!showOffcanvas)}
+        />
+
         <Navbar.Offcanvas
           id={`offcanvasNavbar-expand-lg`}
           aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
@@ -50,7 +53,7 @@ const NavbarElem = () => {
             <Nav className="navv flex-grow-1 pe-3">
               <ul>
                 <li>
-                  <Link to="/">
+                  <Link to="/" onClick={handleOffcanvasClose}>
                     <FontAwesomeIcon icon={faHouse} />
                     <p>Main</p>
                   </Link>
