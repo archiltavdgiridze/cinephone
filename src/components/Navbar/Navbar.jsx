@@ -97,12 +97,12 @@ const NavbarElem = () => {
               </ul>
               <div className="navbar-social-logo">
                 <li>
-                  <Link to="https://www.fb.com">
+                  <Link to="https://www.facebook.com/cinephoneadjarasff?rdid=G9MqZysOid82tOHy&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AvTAPFyFC%2F">
                     <FontAwesomeIcon icon={faFacebookF} />
                   </Link>
                 </li>
                 <li>
-                  <Link to="https://www.instagram.com">
+                  <Link to="https://www.instagram.com/cinephoneadjaraff?igsh=MWw2ZWl2YWg0YW4zcg==">
                     <FontAwesomeIcon icon={faInstagram} />
                   </Link>
                 </li>
